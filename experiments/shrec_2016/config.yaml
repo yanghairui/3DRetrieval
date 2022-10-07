@@ -1,0 +1,29 @@
+CHECK_POINTS: checkpoints
+PATH: /data/ycf/data/SHREC_2016
+
+SEED: 1000
+
+PRETRAINED: True
+NUM_CLASSES: 21
+MODEL_TYPE: 50
+MODEL_FEA_DIM: 4096
+NUM_VIEWS: 12
+
+BATCH_SIZE: 32
+MOMENTUM: 0.9
+WEIGHT_DECAY: 5e-4
+# Learning rate with CNN
+LR_CNN: 1e-3
+# Learning rate with linear transform
+LR_LT: 1e-2
+EXPANSION: 1
+GAMMA: 0.7
+
+STEP_SIZE: 20
+MAX_EPOCH: 40
+# Triplet-Center and Softmax Loss: weight for Triplet-Center Loss
+TCL_WEIGHT: 28.
+MARGIN: 1.0
+# Learing rate with TCL CENTERS
+LR_TCL_CENTERS: 0.1
+CLIP_GRAD: 0.01
