@@ -1,5 +1,8 @@
 # Sequential learning for sketch-based 3D model retrieval
+
 [[Paper]](https://link.springer.com/article/10.1007/s00530-021-00871-w)
+
+[[Data]](https://drive.google.com/drive/folders/19NJdl-4OG0unmjRXxFE_mPBybd0T7C3N?usp=sharing)
 
 ## Data Preparation
 将3D模型转化成多投影视图表示[1]，./dataset/render目录下有相关的渲染代码。
