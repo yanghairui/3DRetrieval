@@ -19,7 +19,7 @@
 
 2. 通过相关性损失函数使得sketch尽可能地靠近同类别的3D模型类别表示。
    
-   $$\mathcal{L}_c = \frac{1}{N_s}\sum_{i=1}^{N_s}D(f_i^s, c_{y_i})$$ 
+   $$\mathcal L_c = \frac{1}{N_s}\sum_{i=1}^{N_s} D(f_i^s, c_{y_i})$$ 
    
    其中 $f_i^s$ 表示的是sketch样本 $x_i^s$ 经过CNN得到特征向量， $c_{y_i}$ 表示类别 $y_i$ 的3D模型类别向量。
 
@@ -28,20 +28,20 @@
 ### Contents
 
 源代码文件结构，其中数据的组织结构参见ycf@210.30.96.136:/data/ycf/data/目录下SHREC_2013、2014、2016数据集。
+
 ![NpPytI.png](https://s1.ax1x.com/2020/06/15/NpPytI.png)
+
 以SHREC 2013数据集为例：
- 1. for 3D Model 
  
+ 1. for 3D Model  
  ```
  python shrec13_alexnet_15_15.py --config experiments/shrec_2013/model/alexnet/config.yaml
  ```
  
- 2. for 2D Sketch
- 
+ 2. for 2D Sketch 
  ```
  python shrec13_im_norm_union_28_alexnet.py --config experiments/shrec_2013/image/alexnet/config.yaml --center_path <1中训练后的权重文件>
  ```
  
-
 ## Reference
 [1] Hang Su, etc. Multi-view Convolutional Neural Networks for 3D Shape Recognition. ICCV 2015.
