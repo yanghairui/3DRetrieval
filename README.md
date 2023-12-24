@@ -27,7 +27,7 @@
 
 ### Contents
 
-源代码文件结构，其中数据的组织结构参见ycf@210.30.96.136:/data/ycf/data/目录下SHREC_2013、2014、2016数据集。
+项目文件组织结构如下，具体参见ycf@210.30.96.136:/data/ycf/data/目录下SHREC_2013、2014、2016数据集。
 
 ![NpPytI.png](https://s1.ax1x.com/2020/06/15/NpPytI.png)
 
